@@ -26,7 +26,7 @@ public class SmartHome {
         }
     }
 
-    public void printAllAppliances(ElectricalAppliance[] appliances) {
+    public void printAllAppliances() {
         for (ElectricalAppliance appliance : appliances) {
             System.out.println(appliance);
         }
@@ -42,9 +42,8 @@ public class SmartHome {
         return totalPower;
     }
 
-    public ElectricalAppliance[] sortAppliancesByPower() {
+    public void sortAppliancesByPower() {
         Arrays.sort(appliances);
-        return appliances;
     }
 
     public ElectricalAppliance[] findAppliancesInRadiationRange(double min, double max) {
